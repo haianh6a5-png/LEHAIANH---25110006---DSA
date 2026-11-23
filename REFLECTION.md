@@ -6,7 +6,7 @@
 - Quick Sort (Full Historical Sorter): Quick Sort có độ phức tạp trung bình O(N log N), phù hợp để sắp xếp các tập dữ liệu lịch sử đấu giá có kích thước lớn. Chiến lược chọn chốt Median-of-Three giúp giảm khả năng tạo ra các phân hoạch mất cân bằng.
 
 2. Thời gian thực thi Quick Sort trên 100.000 bản ghi
-Thời gian thực thi đo được khi sắp xếp 100.000 bản ghi là 121 ms.
+Thời gian thực thi đo được khi sắp xếp 100.000 bản ghi là 46 ms.
 
 3. Lỗi gặp phải và cách xử lý
 Lỗi: Chương trình thông báo không tìm thấy tệp khi thực hiện tạo dữ liệu kiểm thử gồm 100.000 bản ghi.
