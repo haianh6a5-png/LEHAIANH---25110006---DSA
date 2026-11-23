@@ -13,9 +13,9 @@ Lỗi: Khi chạy chương trình để sinh 100.000 bản ghi vào đường d�
 Chẩn đoán và xử lý: Đối tượng std::ofstream chỉ có khả năng tạo tệp mới bên trong một thư mục đã tồn tại chứ không tự động khởi tạo thư mục cha. Để khắc phục, em đã chạy lệnh mkdir test_data trong Terminal (sau đó bổ sung std::filesystem::create_directories vào mã nguồn) để đảm bảo thư mục đích luôn tồn tại trước khi ghi tệp
 
 4. Các câu lệnh đã sử dụng với LLM
-[Green] "Hãy tạo 5 bộ dữ liệu đầu vào thuộc các trường hợp biên (edge-case) cần cân nhắc khi kiểm thử thuật toán."
-[Green] "Giải thích tại sao hàm quickSortWrapper lại cần thiết."
-[Yellow] "Lỗi không tương thích kiểu dữ liệu (type mismatch) khi sử dụng std::min là gì và cần sửa các kiểu dữ liệu như thế nào cho đúng?"
+- [Green] "Hãy tạo 5 bộ dữ liệu đầu vào thuộc các trường hợp biên (edge-case) cần cân nhắc khi kiểm thử thuật toán."
+- [Green] "Giải thích tại sao hàm quickSortWrapper lại cần thiết."
+- [Yellow] "Lỗi không tương thích kiểu dữ liệu (type mismatch) khi sử dụng std::min là gì và cần sửa các kiểu dữ liệu như thế nào cho đúng?"
 
 5. Độ phức tạp trong trường hợp xấu nhất của Quick Sort sử dụng Median-of-Three
 Độ phức tạp trong trường hợp xấu nhất của thuật toán vẫn là O(N ^ 2). Dù Median-of-Three chọn trung vị của 3 phần tử đầu, giữa và cuối làm chốt (pivot) để tránh trường hợp dữ liệu đã sắp xếp, phương pháp này không đảm bảo mọi bước phân hoạch đều cân bằng. Về mặt lý thuyết, vẫn tồn tại các bộ dữ liệu đối kháng ("median-of-three killer") được sắp đặt sao cho giá trị trung vị được chọn luôn rơi sát vào phần tử nhỏ nhất hoặc lớn nhất của mảng con, khiến phân hoạch bị lệch hoàn toàn ở mọi bước đệ quy và đẩy chi phí lên O(N ^ 2)
