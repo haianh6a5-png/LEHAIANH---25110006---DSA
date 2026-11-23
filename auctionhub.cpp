@@ -176,7 +176,7 @@ int main(int argc, char* argv[]) {
         cout << "Verification: PASS (100000 records are sorted)\n";
     else
         cout << "Verification: FAIL (data is not sorted)\n";
-    cout << "--- Ket qua sau khi sap xep ---\n";
+    cout << "Ket qua sau khi sap xep\n";
     printBids(bids, 5);
 
 
